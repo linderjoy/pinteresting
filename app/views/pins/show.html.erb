@@ -11,7 +11,7 @@
 				<p>
 				  <%= @pin.description %>
 				  <br />
-				  <strong><%= @pin.user.email %></strong>
+				  <strong><%= @pin.user.name %></strong>
 				</p>
 				<% if @pin.user == current_user %>
 					<%= link_to edit_pin_path(@pin) do %>
